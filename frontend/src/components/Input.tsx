@@ -16,7 +16,7 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, IInput> = (
         placeholder={placeholder}
         ref={ref}
         {...rest}
-        className="px-3 py-2 bg-gray-950 rounded-md h-full"
+        className="px-3 py-2 bg-gray-950 rounded-md h-full w-full"
       />
     </div>
   );

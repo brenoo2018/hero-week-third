@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Rubik } from 'next/font/google';
 import './globals.css';
+import { SocketProvider } from '@/context/SocketContex';
 
 const inter = Rubik({ subsets: ['latin'] });
 
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${inter.className} bg-black text-white`}>
-        {children}
+        <SocketProvider>{children}</SocketProvider>
       </body>
     </html>
   );
